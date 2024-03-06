@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	fmt.Println("func Add")
-	fmt.Println(Add(1, 2))
-	fmt.Println(Add[int](2, 2))
+	fmt.Println(Add[int](1, 2))
+	fmt.Println(Add(2, 2))
 	fmt.Println(Add(1.1, 2.2))
 
 	fmt.Println("func Add2")
