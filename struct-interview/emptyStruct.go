@@ -15,3 +15,13 @@ func testEmptyStruct() {
 	fmt.Println("nil varible size: ", unsafe.Sizeof(nilVar))
 
 }
+
+type runner interface {
+	run()
+}
+
+type defaultRunner struct{}
+
+func (defaultRunner) run() {
+	fmt.Println("not implement")
+}
