@@ -82,3 +82,9 @@ func (dept *FinaceDept) GoodEmployees() {
 		}
 	}
 }
+
+func main() {
+	fmt.Println("Test employee example")
+	eTeckDept.GoodEmployees()
+	eFinaceDept.GoodEmployees()
+}
