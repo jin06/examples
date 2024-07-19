@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Q struct {
 	cids []int
 }
@@ -28,8 +30,12 @@ func main() {
 		res1 = append(res1, cid+1)
 	})
 
+	res2 := make([]int, 0)
 	for _, cid := range q.f2 {
-		res1 = append(res1, cid+1)
+		res2 = append(res2, cid+1)
 	}
+
+	fmt.Println("res1: ", res1)
+	fmt.Println("res2: ", res2)
 
 }
