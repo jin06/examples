@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type Q struct {
 	cids []int
 }
@@ -25,12 +23,13 @@ func main() {
 		q.cids = append(q.cids, i)
 	}
 
+	res1 := make([]int, 0)
 	q.Iterator(func(cid int) {
-		fmt.Printf("send message: 'hello' to cid: %v", cid)
+		res1 = append(res1, cid+1)
 	})
 
 	for _, cid := range q.f2 {
-		fmt.Printf("send message: 'hello' to cid: %v", cid)
+		res1 = append(res1, cid+1)
 	}
 
 }
