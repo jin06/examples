@@ -1,6 +1,2 @@
-golang.org/dl v0.0.0-20240621154342-20a4bcbb3ee2 h1:pV/1u+ib3c3Lhedg7EeTXMmyo7pKi7xHFH++3qlpxV8=
-golang.org/dl v0.0.0-20240621154342-20a4bcbb3ee2/go.mod h1:fwQ+hlTD8I6TIzOGkQqxQNfE2xqR+y7SzGaDkksVFkw=
-golang.org/dl v0.0.0-20240813161640-304e16060ce9 h1:evR8SFp1iO10xzDUe9QzOgAuqTujC2StDoPK41Fln04=
-golang.org/dl v0.0.0-20240813161640-304e16060ce9/go.mod h1:fwQ+hlTD8I6TIzOGkQqxQNfE2xqR+y7SzGaDkksVFkw=
-golang.org/x/exp v0.0.0-20240222234643-814bf88cf225 h1:LfspQV/FYTatPTr/3HzIcmiUFH7PGP+OQ6mgDYo3yuQ=
-golang.org/x/exp v0.0.0-20240222234643-814bf88cf225/go.mod h1:CxmFvTBINI24O/j8iY7H1xHzx2i4OsyguNBmN/uPtqc=
+golang.org/x/exp v0.0.0-20240808152545-0cdaa3abc0fa h1:ELnwvuAXPNtPk1TJRuGkI9fDTwym6AYBu0qzT8AcHdI=
+golang.org/x/exp v0.0.0-20240808152545-0cdaa3abc0fa/go.mod h1:akd2r19cwCdwSwWeIdzYQGa/EZZyqcOdwWiwj5L5eKQ=

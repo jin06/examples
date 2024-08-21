@@ -1,18 +1,14 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
-func main() {
+func oldRange() {
 	values := []int{1, 2, 3}
+	var rec int
 	for _, v := range values {
-		v := v
+		rec = v
 		go func() {
-			fmt.Println(v)
+			fmt.Println(rec)
 		}()
 	}
-
-	<-time.Tick(time.Second)
 }

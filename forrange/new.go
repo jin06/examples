@@ -5,12 +5,12 @@ import (
 	"time"
 )
 
-func main() {
+func newRange() {
 	values := []int{1, 2, 3}
 	for _, v := range values {
-		v := v
+		var rec = v
 		go func() {
-			fmt.Println(v)
+			fmt.Println(rec)
 		}()
 	}
 
