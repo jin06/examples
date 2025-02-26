@@ -1,0 +1,28 @@
+package main
+
+import (
+	"github.com/sbinet/go-python"
+)
+
+func main() {
+	// 初始化 Python 解释器
+	python.Initialize()
+	defer python.Finalize()
+
+	// 导入 Python 模块
+	mainModule := python.PyImport_ImportModule("__main__")
+	if mainModule == nil {
+		panic("Failed to import __main__ module")
+	}
+
+	// 获取全局字典
+	globals := mainModule.GetDict()
+
+	// 执行 Python 代码
+	code := `
+print("Hello from Python!")
+for i in range(3):
+    print(f"Count: {i}")
+`
+	python.PyRun_SimpleString(code)
+}
